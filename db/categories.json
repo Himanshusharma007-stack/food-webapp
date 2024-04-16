@@ -1,0 +1,43 @@
+[
+    {
+      "name": "Italian",
+      "imageUrl": "https://images.unsplash.com/photo-1631561411189-4f795a67083e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8aXRhbGlhbmZvb2R8fHx8fHwxNzEzMjkwNzkw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080",
+      "description": "Enjoy pizzas, pastas, and other classic Italian dishes."
+    },
+    {
+      "name": "Indian",
+      "imageUrl": "https://images.unsplash.com/photo-1631452180539-96aca7d48617?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8SW5kaWFuZm9vZHx8fHx8fDE3MTMyOTA5MjU&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080",
+      "description": "Explore flavorful curries, tandoori delights, and biryanis."
+    },
+    {
+      "name": "Chinese",
+      "imageUrl": "https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50",
+      "description": "Order dumplings, noodles, stir-fries, and other Chinese favorites."
+    },
+    {
+      "name": "Mexican",
+      "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/660ccb7a943756c4c2243a71-cfeb5d29.jpeg",
+      "description": "Indulge in tacos, burritos, fajitas, and other Mexican staples."
+    },
+    {
+      "name": "Thai",
+      "imageUrl": "https://www.thespruceeats.com/thmb/rpna85WRMBQZ5Q5WgDu7TRGJx08=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1042998066-518ca1d7f2804eb09039e9e42e91667c.jpg",
+      "description": "Savor curries, pad thai, and other aromatic Thai dishes."
+    },
+    {
+      "name": "American",
+      "imageUrl": "https://idc.edu/wp-content/uploads/2018/07/Traditional-American-Food-You-Must-Try-While-Studying-in-Washington-DC.jpg",
+      "description": "Treat yourself to burgers, fries, pizzas, and American classics."
+    },
+    {
+      "name": "Japanese",
+      "imageUrl": "https://images-cdn.welcomesoftware.com/Zz02ZGU5MzJkMDk5YmYxMWViOTdhYTQzMzliZjMzMjljYQ==/Zz0wMWZiOGVjMGIxNzcxMWVhYjhhMTBhZGYxMWZiZjY5NQ%3D%3D.jpg?width=1366",
+      "description": "Explore sushi, ramen, tempura, and other Japanese specialties."
+    },
+    {
+      "name": "Mediterranean",
+      "imageUrl": "https://www.businessinsider.in/_next/image?url=https%3A%2F%2Fstaticbiassets.in%2Fthumb%2Fmsid-64858887%2Cwidth-700%2Cresizemode-4%2Cimgsize-187724%2Fmiddle-eastern-cuisine-is-poised-to-take-over-america-and-it-reveals-a-huge-change-in-how-people-like-to-eat.jpg&w=2048&q=75",
+      "description": "Discover hummus, falafel, gyros, and other dishes from the region."
+    }
+  ]
+  
