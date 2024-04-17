@@ -4,7 +4,7 @@ import FoodDelAnim from "../animations/food-del-animation.json";
 export function FoodDelAnimation(props) {
   return (
     <Lottie
-      animationData={FoodDelAnim}
+      animationData={props.animation || FoodDelAnim}
       style={{ height: props.height || "67vh" }}
     />
   );
