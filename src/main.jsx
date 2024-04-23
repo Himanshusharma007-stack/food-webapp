@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx";
 import Base from "./layouts/Base.jsx";
 import About from "./pages/About.jsx";
 import FoodDetail from "./pages/FoodDetail.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "food-detail/:id",
         element: <FoodDetail />,
+      },
+      {
+        path: "contactus",
+        element: <ContactUs />,
       },
     ],
   },

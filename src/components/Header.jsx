@@ -41,7 +41,14 @@ export default function Header() {
             </NavLink>
           </li>
           <li className="hover:scale-110 duration-300">
+          <NavLink
+              to="/contactus"
+              className={({ isActive, isPending }) =>
+                isActive ? "text-red-500" : ""
+              }
+            >
             <button>Contact us</button>
+            </NavLink>
           </li>
         </ul>
 
