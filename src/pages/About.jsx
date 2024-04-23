@@ -39,12 +39,12 @@ export default function About() {
           </ul>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row justify-between mx-4 md:mx-10 my-6 md:my-12">
-        <div class="flex-grow text-center md:w-1/3 mx-4 md:mx-10 px-6 md:px-12 border border-slate rounded-lg md:h-80 py-4">
+      <div className="flex flex-col md:flex-row justify-between mx-4 md:mx-10 my-6 md:my-12">
+        <div className="flex-grow text-center md:w-1/3 mx-4 md:mx-10 px-6 md:px-12 border border-slate rounded-lg md:h-80 py-4">
           <FoodDelAnimation height="16vh" animation={FastDelivery} />
-          <div class="mt-4 md:mt-3">
-            <h1 class="text-lg md:text-2xl">Quick Delivery</h1>
-            <p class="mt-2">
+          <div className="mt-4 md:mt-3">
+            <h1 className="text-lg md:text-2xl">Quick Delivery</h1>
+            <p className="mt-2">
               Enjoy quick and reliable delivery services, bringing delicious
               meals straight to your doorstep, so you can dine in the comfort of
               your home.
@@ -52,22 +52,22 @@ export default function About() {
           </div>
         </div>
 
-        <div class="flex-grow text-center md:w-1/3 mx-4 md:mx-10 px-6 md:px-12 border border-slate rounded-lg md:h-80 py-4 mt-6 md:mt-0">
+        <div className="flex-grow text-center md:w-1/3 mx-4 md:mx-10 px-6 md:px-12 border border-slate rounded-lg md:h-80 py-4 mt-6 md:mt-0">
           <FoodDelAnimation height="16vh" animation={Delicious} />
-          <div class="mt-4 md:mt-3">
-            <h1 class="text-lg md:text-2xl">Exceptional Taste</h1>
-            <p class="mt-2">
+          <div className="mt-4 md:mt-3">
+            <h1 className="text-lg md:text-2xl">Exceptional Taste</h1>
+            <p className="mt-2">
               Our commitment to culinary excellence ensures that each dish is
               expertly crafted to deliver an unforgettable taste experience.
             </p>
           </div>
         </div>
 
-        <div class="flex-grow text-center md:w-1/3 mx-4 md:mx-10 px-6 md:px-12 border border-slate rounded-lg md:h-80 py-4 mt-6 md:mt-0">
+        <div className="flex-grow text-center md:w-1/3 mx-4 md:mx-10 px-6 md:px-12 border border-slate rounded-lg md:h-80 py-4 mt-6 md:mt-0">
           <FoodDelAnimation height="16vh" animation={HappyCustomer} />
-          <div class="mt-4 md:mt-3">
-            <h1 class="text-lg md:text-2xl">Customer Satisfaction</h1>
-            <p class="mt-2">
+          <div className="mt-4 md:mt-3">
+            <h1 className="text-lg md:text-2xl">Customer Satisfaction</h1>
+            <p className="mt-2">
               We prioritize your satisfaction above all else, striving to exceed
               your expectations with every order.
             </p>
