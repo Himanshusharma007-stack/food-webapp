@@ -1,15 +1,7 @@
 import categories from "../../db/categories.json";
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  const navigate = useNavigate();
-
-  function categoryClicked(category) {
-    console.log("category --- ", category);
-    navigate(`/food-detail/${category.id}`);
-  }
-
   return (
     <>
       <div className="relative">
@@ -30,10 +22,6 @@ export default function Home() {
         <h1 className="text-center font-bold text-3xl">Select a category</h1>
         <div className="flex flex-wrap justify-center mb-10 mt-4">
           {categories.map((category) => (
-            // <button
-            //   key={category.name}
-            //   onClick={() => categoryClicked(category)}
-            // >
             <Link
               key={category.id}
               to={`/food-detail/${category.id}`}
