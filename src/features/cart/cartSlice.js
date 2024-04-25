@@ -25,8 +25,8 @@ export const cartSlice = createSlice({
       let indexOfItem = state.items.findIndex(
         (item) => item.id == action.payload.id
       );
-      if (indexOfItem < 0) {
-        state.items.push({ ...action.payload, count: 0 });
+      if (state.items[indexOfItem]["count"] == 1) {
+        state.items.splice(indexOfItem, 1);
       } else {
         state.items[indexOfItem] = {
           ...state.items[indexOfItem],

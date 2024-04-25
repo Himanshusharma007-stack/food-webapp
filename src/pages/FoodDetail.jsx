@@ -19,30 +19,45 @@ export default function FoodDetail() {
   }
 
   useEffect(() => {
-    setFoodItems(getFoodItemByCategory(state.category.id));
-  }, []);
-  
-  useEffect(() => {
-    if (foodItems.length) {
+    if (getFoodItemByCategory(state.category.id).length) {
       let arr = [];
-      for (let i = 0; i < foodItems.length; i++) {
-        const element = foodItems[i];
-        let cartItemWithSameid = cartArr.find(
-          (cartFooditem) => cartFooditem.id == element.id
+      for (
+        let i = 0;
+        i < getFoodItemByCategory(state.category.id).length;
+        i++
+      ) {
+        const element = getFoodItemByCategory(state.category.id)[i];
+        let cartItemWithSameid = cartArr?.find(
+          (cartFooditem) => cartFooditem?.id == element?.id
         );
         if (cartItemWithSameid) {
-          console.log("inside if === ", cartItemWithSameid);
           arr.push(cartItemWithSameid);
         } else {
-          console.log("inside else === ", cartItemWithSameid);
           arr.push(element);
         }
       }
       setFoodItems(arr);
     }
-  }, [cartArr, foodItems]);
+  }, []);
 
-  // useEffect(() => console.log("fooditem ---- ", foodItems), [foodItems]);
+  useEffect(() => {
+    if (foodItems.length) {
+      let arr = [];
+      for (let i = 0; i < foodItems.length; i++) {
+        const element = foodItems[i];
+        let cartItemWithSameid = cartArr?.find(
+          (cartFooditem) => cartFooditem?.id == element?.id
+        );
+        if (cartItemWithSameid) {
+          arr.push(cartItemWithSameid);
+        } else {
+          const { count, ...newElement } = element;
+          arr.push(newElement);
+        }
+      }
+      setFoodItems(arr);
+    }
+  }, [cartArr]);
 
   return (
     <>
