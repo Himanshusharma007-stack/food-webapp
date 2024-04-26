@@ -1,5 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import CartIcon from '../assets/header/cart.png'
 
 export default function Header() {
   const cartArr = useSelector((state) => state.cart.items);
@@ -60,7 +61,7 @@ export default function Header() {
           <Link to={cartArr?.length ? "/food-webapp/checkout" : ""}>
             <button className="relative">
               <img
-                src="../assets/header/cart.png"
+                src={CartIcon}
                 className="h-10 w-10"
                 alt="Shopping Cart"
               />
