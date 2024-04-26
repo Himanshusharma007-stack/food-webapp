@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import GithubLogo from '../assets/footer/github.png'
+import LinkedinLogo from '../assets/footer/linkedin.png'
+import ShoppingBagLogo from '../assets/footer/shopping-bags.png'
 
 export default function Footer() {
   return (
@@ -14,7 +17,7 @@ export default function Footer() {
               target="_blank"
             >
               <img
-                src="../assets/footer/github.png"
+                src={GithubLogo}
                 className="h-8 w-8"
                 alt="Github"
               />
@@ -24,7 +27,7 @@ export default function Footer() {
               target="_blank"
             >
               <img
-                src="../assets/footer/linkedin.png"
+                src={LinkedinLogo}
                 className="h-8 w-8"
                 alt="LinkedIn"
               />
@@ -38,7 +41,7 @@ export default function Footer() {
               target="_blank"
             >
               <img
-                src="../assets/footer/shopping-bags.png"
+                src={ShoppingBagLogo}
                 className="h-10 w-10 ml-5"
                 alt="Shopping Bags"
               />

@@ -1,6 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import CartIcon from '../assets/header/cart.png'
+import foodIcon from '../assets/header/bw-food-icon.png'
 
 export default function Header() {
   const cartArr = useSelector((state) => state.cart.items);
@@ -13,7 +14,7 @@ export default function Header() {
           <Link to="/food-webapp">
             <button className="flex items-center hover:scale-110 duration-300">
               <img
-                src="../assets/header/bw-food-icon.png"
+                src={foodIcon}
                 className="h-10 w-10 transition-all"
                 alt="PlatterPulse Logo"
               />

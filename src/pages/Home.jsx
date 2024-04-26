@@ -1,12 +1,13 @@
 import categories from "../../db/categories.json";
 import { Link } from "react-router-dom";
+import CarouselImg from '../assets/home/Carousel.jpeg'
 
 export default function Home() {
   return (
     <>
       <div className="relative">
         <img
-          src="../assets/home/Carousel.jpeg"
+          src={CarouselImg}
           className="h-96 w-screen object-cover"
           alt="Carousel Image"
         />
