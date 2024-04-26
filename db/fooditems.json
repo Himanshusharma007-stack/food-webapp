@@ -4,19 +4,22 @@
       "id": 101,
       "name": "Margherita Pizza",
       "imageUrl": "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Classic Italian pizza topped with tomato, mozzarella, and basil."
+      "description": "Classic Italian pizza topped with tomato, mozzarella, and basil.",
+      "price": 299
     },
     {
       "id": 102,
       "name": "Spaghetti Carbonara",
       "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Pasta dish with eggs, cheese, pancetta, and black pepper."
+      "description": "Pasta dish with eggs, cheese, pancetta, and black pepper.",
+      "price": 299
     },
     {
       "id": 103,
       "name": "Tiramisu",
       "imageUrl": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=2536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Traditional Italian dessert made with coffee-soaked ladyfingers and mascarpone cheese."
+      "description": "Traditional Italian dessert made with coffee-soaked ladyfingers and mascarpone cheese.",
+      "price": 299
     }
   ],
   "2": [
@@ -24,19 +27,22 @@
       "id": 201,
       "name": "Butter Chicken",
       "imageUrl": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Creamy and flavorful Indian chicken dish cooked in a spiced tomato sauce. It is a type of curry made from chicken with a spiced tomato and butter (makhan) sauce."
+      "description": "Creamy and flavorful Indian chicken dish cooked in a spiced tomato sauce. It is a type of curry made from chicken with a spiced tomato and butter (makhan) sauce.",
+      "price": 299
     },
     {
       "id": 202,
       "name": "Chicken Biryani",
       "imageUrl": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpY2tlbiUyMEJpcnlhbml8ZW58MHx8MHx8fDA%3D",
-      "description": "Fragrant rice dish layered with marinated chicken and spices, cooked to perfection."
+      "description": "Fragrant rice dish layered with marinated chicken and spices, cooked to perfection.",
+      "price": 299
     },
     {
       "id": 203,
       "name": "Palak Paneer",
       "imageUrl": "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UGFsYWslMjBQYW5lZXJ8ZW58MHx8MHx8fDA%3D",
-      "description": "Indian vegetarian dish made with spinach and paneer (Indian cottage cheese)."
+      "description": "Indian vegetarian dish made with spinach and paneer (Indian cottage cheese).",
+      "price": 299
     }
   ],
   "3": [
@@ -44,19 +50,22 @@
       "id": 301,
       "name": "Dumplings",
       "imageUrl": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RHVtcGxpbmdzfGVufDB8fDB8fHww",
-      "description": "Steamed or fried dough filled with meat, vegetables, or seafood."
+      "description": "Steamed or fried dough filled with meat, vegetables, or seafood.",
+      "price": 299
     },
     {
       "id": 302,
       "name": "Mapo Tofu",
       "imageUrl": "https://plus.unsplash.com/premium_photo-1695044277238-6eac8969fb77?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TWFwbyUyMFRvZnV8ZW58MHx8MHx8fDA%3D",
-      "description": "Spicy Chinese dish made with tofu and minced meat, cooked in a flavorful sauce."
+      "description": "Spicy Chinese dish made with tofu and minced meat, cooked in a flavorful sauce.",
+      "price": 299
     },
     {
       "id": 303,
       "name": "Kung Pao Chicken",
       "imageUrl": "https://plus.unsplash.com/premium_photo-1700161711418-014824c357bb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8S3VuZyUyMFBhbyUyMENoaWNrZW4lMjBkaXNofGVufDB8fDB8fHww",
-      "description": "Stir-fried chicken with peanuts, vegetables, and chili peppers."
+      "description": "Stir-fried chicken with peanuts, vegetables, and chili peppers.",
+      "price": 299
     }
   ],
   "4": [
@@ -64,19 +73,22 @@
       "id": 401,
       "name": "Tacos al Pastor",
       "imageUrl": "https://images.unsplash.com/photo-1613409385222-3d0decb6742a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VGFjb3MlMjBhbCUyMFBhc3RvcnxlbnwwfHwwfHx8MA%3D%3D",
-      "description": "Mexican tacos made with spit-grilled pork, pineapple, and onions."
+      "description": "Mexican tacos made with spit-grilled pork, pineapple, and onions.",
+      "price": 299
     },
     {
       "id": 402,
       "name": "Quesadillas",
       "imageUrl": "https://images.unsplash.com/photo-1628838233717-be047a0b54fb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UXVlc2FkaWxsYXN8ZW58MHx8MHx8fDA%3D",
-      "description": "Mexican dish consisting of a tortilla filled with cheese and other ingredients, grilled or fried."
+      "description": "Mexican dish consisting of a tortilla filled with cheese and other ingredients, grilled or fried.",
+      "price": 299
     },
     {
       "id": 403,
       "name": "Chiles Rellenos",
       "imageUrl": "https://plus.unsplash.com/premium_photo-1664475990295-e4518c63edaf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Q2hpbGVzJTIwUmVsbGVub3N8ZW58MHx8MHx8fDA%3D",
-      "description": "Mexican dish made of roasted poblano peppers stuffed with cheese, meat, or vegetables, then fried in an egg batter."
+      "description": "Mexican dish made of roasted poblano peppers stuffed with cheese, meat, or vegetables, then fried in an egg batter.",
+      "price": 299
     }
   ],
   "5": [
@@ -84,19 +96,22 @@
       "id": 501,
       "name": "Green Curry",
       "imageUrl": "https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8R3JlZW4lMjBDdXJyeXxlbnwwfHwwfHx8MA%3D%3D",
-      "description": "Thai curry made with green curry paste, coconut milk, meat or seafood, and vegetables."
+      "description": "Thai curry made with green curry paste, coconut milk, meat or seafood, and vegetables.",
+      "price": 299
     },
     {
       "id": 502,
       "name": "Pad Thai",
       "imageUrl": "https://images.unsplash.com/photo-1626804475297-41608ea09aeb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UGFkJTIwVGhhaXxlbnwwfHwwfHx8MA%3D%3D",
-      "description": "Thai stir-fried rice noodle dish with eggs, tofu, shrimp, peanuts, and bean sprouts."
+      "description": "Thai stir-fried rice noodle dish with eggs, tofu, shrimp, peanuts, and bean sprouts.",
+      "price": 299
     },
     {
       "id": 503,
       "name": "Tom Yum Soup",
       "imageUrl": "https://plus.unsplash.com/premium_photo-1664391935474-f1e502d3ad61?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8VG9tJTIwWXVtJTIwU291cHxlbnwwfHwwfHx8MA%3D%3D",
-      "description": "Thai hot and sour soup flavored with lemongrass, lime, chili, and shrimp or chicken."
+      "description": "Thai hot and sour soup flavored with lemongrass, lime, chili, and shrimp or chicken.",
+      "price": 299
     }
   ],
   "6": [
@@ -104,19 +119,22 @@
       "id": 601,
       "name": "Cheeseburger",
       "imageUrl": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hlZXNlYnVyZ2VyfGVufDB8fDB8fHww",
-      "description": "Classic American sandwich with a beef patty, cheese, lettuce, tomato, and pickles."
+      "description": "Classic American sandwich with a beef patty, cheese, lettuce, tomato, and pickles.",
+      "price": 299
     },
     {
       "id": 602,
       "name": "French Fries",
       "imageUrl": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RnJlbmNoJTIwRnJpZXN8ZW58MHx8MHx8fDA%3D",
-      "description": "Thin strips of potato deep-fried until crispy and golden brown."
+      "description": "Thin strips of potato deep-fried until crispy and golden brown.",
+      "price": 299
     },
     {
       "id": 603,
       "name": "BBQ Ribs",
       "imageUrl": "https://images.unsplash.com/photo-1593030668930-8130abedd2b0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QkJRJTIwUmlic3xlbnwwfHwwfHx8MA%3D%3D",
-      "description": "Slow-cooked pork ribs coated in barbecue sauce, tender and flavorful."
+      "description": "Slow-cooked pork ribs coated in barbecue sauce, tender and flavorful.",
+      "price": 299
     }
   ],
   "7": [
@@ -124,19 +142,22 @@
       "id": 701,
       "name": "Sushi",
       "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U3VzaGl8ZW58MHx8MHx8fDA%3D",
-      "description": "Japanese dish consisting of vinegared rice topped with fish, seafood, or vegetables."
+      "description": "Japanese dish consisting of vinegared rice topped with fish, seafood, or vegetables.",
+      "price": 299
     },
     {
       "id": 702,
       "name": "Ramen",
       "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UmFtZW58ZW58MHx8MHx8fDA%3D",
-      "description": "Japanese noodle soup dish with broth, noodles, meat or tofu, and various toppings."
+      "description": "Japanese noodle soup dish with broth, noodles, meat or tofu, and various toppings.",
+      "price": 299
     },
     {
       "id": 703,
       "name": "Tempura",
       "imageUrl": "https://images.unsplash.com/photo-1601736461246-e690e5cc2bac?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGVtcHVyYXxlbnwwfHwwfHx8MA%3D%3D",
-      "description": "Japanese dish of battered and deep-fried seafood or vegetables."
+      "description": "Japanese dish of battered and deep-fried seafood or vegetables.",
+      "price": 299
     }
   ],
   "8": [
@@ -144,19 +165,22 @@
       "id": 801,
       "name": "Hummus",
       "imageUrl": "https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8SHVtbXVzfGVufDB8fDB8fHww",
-      "description": "Creamy dip made from mashed chickpeas, tahini, lemon juice, and garlic."
+      "description": "Creamy dip made from mashed chickpeas, tahini, lemon juice, and garlic.",
+      "price": 299
     },
     {
       "id": 802,
       "name": "Falafel",
       "imageUrl": "https://images.unsplash.com/photo-1547058881-aa0edd92aab3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RmFsYWZlbHxlbnwwfHwwfHx8MA%3D%3D",
-      "description": "Deep-fried balls or patties made from ground chickpeas, herbs, and spices."
+      "description": "Deep-fried balls or patties made from ground chickpeas, herbs, and spices.",
+      "price": 299
     },
     {
       "id": 803,
       "name": "Gyro",
       "imageUrl": "https://images.unsplash.com/photo-1555196301-9acc011dfde4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8R3lyb3xlbnwwfHwwfHx8MA%3D%3D",
-      "description": "Mediterranean dish of meat cooked on a vertical rotisserie, served wrapped in pita bread with tzatziki sauce."
+      "description": "Mediterranean dish of meat cooked on a vertical rotisserie, served wrapped in pita bread with tzatziki sauce.",
+      "price": 299
     }
   ]
 }

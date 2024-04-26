@@ -1,4 +1,15 @@
+import Notification from "../components/Notification";
+import { useState } from "react";
+
 export default function ContactUs() {
+  const [contactUs, setContactUs] = useState(false);
+
+  function contactusBtnClicked() {
+    setContactUs(true);
+    setTimeout(() => {
+      setContactUs(false);
+    }, 3000);
+  }
   return (
     <>
       <div className="mx-auto max-w-7xl px-4">
@@ -88,10 +99,17 @@ export default function ContactUs() {
                   <button
                     type="button"
                     className="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    onClick={() => contactusBtnClicked()}
                   >
                     Send Message
                   </button>
                 </form>
+                {contactUs && (
+                  <Notification
+                    msg="This feature will available soon."
+                    close={() => setContactUs(false)}
+                  />
+                )}
               </div>
             </div>
             <img

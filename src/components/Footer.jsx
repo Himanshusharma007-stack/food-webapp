@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <>
@@ -11,7 +13,11 @@ export default function Footer() {
               href="https://github.com/Himanshusharma007-stack"
               target="_blank"
             >
-              <img src="../src/assets/footer/github.png" className="h-8 w-8" alt="Github" />
+              <img
+                src="../src/assets/footer/github.png"
+                className="h-8 w-8"
+                alt="Github"
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/himanshusharma007-stack/"
@@ -44,18 +50,24 @@ export default function Footer() {
         <div className="text-lg md:text-xl">
           <h1 className="mt-2 mb-4">Company</h1>
 
-          <p className="text-slate-400 my-2">About</p>
-          <p className="text-slate-400 my-2">Careers</p>
-          <p className="text-slate-400 my-2">Team</p>
+          <p className="text-slate-400 my-2">
+            <Link to="/about">About</Link>
+          </p>
+          {/* <p className="text-slate-400 my-2">Careers</p> */}
+          <p className="text-slate-400 my-2">
+            <Link to="/teams">Team</Link>
+          </p>
         </div>
 
         {/* Contact Us */}
         <div className="text-lg md:text-xl">
           <h1 className="mt-2 mb-4">Contact us</h1>
 
-          <p className="text-slate-400 my-2">Help & Support</p>
-          <p className="text-slate-400 my-2">Partner with us</p>
-          <p className="text-slate-400 my-2">Ride with us</p>
+          <p className="text-slate-400 my-2">
+            <Link to="/contactus">Help & Support</Link>
+          </p>
+          {/* <p className="text-slate-400 my-2">Partner with us</p>
+          <p className="text-slate-400 my-2">Ride with us</p> */}
         </div>
 
         {/* Spacer */}

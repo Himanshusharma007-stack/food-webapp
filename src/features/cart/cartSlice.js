@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createSelector } from "@reduxjs/toolkit";
 
 const initialState = {
   items: [],
@@ -34,10 +34,25 @@ export const cartSlice = createSlice({
         };
       }
     },
+    deleteFromCart: (state, action) => {
+      let indexOfItem = state.items.findIndex(
+        (item) => item.id == action.payload.id
+      );
+      state.items.splice(indexOfItem, 1);
+    },
   },
 });
 
+export const getTotalAmount = createSelector(
+  (state) => state.cart.items,
+  (items) =>
+    items.reduce(
+      (accumulator, { price, count }) => accumulator + price * count,
+      0
+    )
+);
+
 // Action creators are generated for each case reducer function
-export const { addToCart, removeFromCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, deleteFromCart } = cartSlice.actions;
 
 export default cartSlice.reducer;

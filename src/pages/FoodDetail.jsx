@@ -3,6 +3,7 @@ import { getFoodItemByCategory } from "../utils/getFooditemsByCategory";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart, removeFromCart } from "../features/cart/cartSlice";
 import { useEffect, useState } from "react";
+import { filterFoodItems } from "../utils/filteredFooditems";
 
 export default function FoodDetail() {
   let { state } = useLocation();
@@ -19,42 +20,16 @@ export default function FoodDetail() {
   }
 
   useEffect(() => {
-    if (getFoodItemByCategory(state.category.id).length) {
-      let arr = [];
-      for (
-        let i = 0;
-        i < getFoodItemByCategory(state.category.id).length;
-        i++
-      ) {
-        const element = getFoodItemByCategory(state.category.id)[i];
-        let cartItemWithSameid = cartArr?.find(
-          (cartFooditem) => cartFooditem?.id == element?.id
-        );
-        if (cartItemWithSameid) {
-          arr.push(cartItemWithSameid);
-        } else {
-          arr.push(element);
-        }
-      }
-      setFoodItems(arr);
-    }
+    let arr = filterFoodItems(
+      getFoodItemByCategory(state.category.id),
+      cartArr
+    );
+    setFoodItems(arr);
   }, []);
 
   useEffect(() => {
     if (foodItems.length) {
-      let arr = [];
-      for (let i = 0; i < foodItems.length; i++) {
-        const element = foodItems[i];
-        let cartItemWithSameid = cartArr?.find(
-          (cartFooditem) => cartFooditem?.id == element?.id
-        );
-        if (cartItemWithSameid) {
-          arr.push(cartItemWithSameid);
-        } else {
-          const { count, ...newElement } = element;
-          arr.push(newElement);
-        }
-      }
+      let arr = filterFoodItems(foodItems, cartArr);
       setFoodItems(arr);
     }
   }, [cartArr]);
@@ -73,9 +48,10 @@ export default function FoodDetail() {
         {foodItems.map((elem) => {
           return (
             <div className="mx-24 bg-gray-200 rounded-lg my-8 " key={elem.id}>
-              <div className="w-full h-40 grid grid-cols-6 gap-4 p-3">
+              <div className="w-full min-h-40 grid grid-cols-6 gap-4 p-3">
                 <div className="col-span-5 flex flex-col flex-wrap justify-center">
                   <h1 className="font-bold text-xl">{elem.name}</h1>
+                  <h1 className="font-bold text-l">₹{elem.price}</h1>
                   <p className="mt-2">{elem.description}</p>
 
                   {!elem.count ? (

@@ -7,6 +7,8 @@ import Base from "./layouts/Base.jsx";
 import About from "./pages/About.jsx";
 import FoodDetail from "./pages/FoodDetail.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import Teams from "./pages/Team.jsx";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
 
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "contactus",
         element: <ContactUs />,
+      },
+      {
+        path: "checkout",
+        element: <Checkout />,
+      },
+      {
+        path: "teams",
+        element: <Teams />,
       },
     ],
   },
