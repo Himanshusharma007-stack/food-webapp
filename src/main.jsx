@@ -14,7 +14,7 @@ import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
   {
-    path: "/food-webapp",
+    path: "/food-webapp/",
     element: <Base />,
     children: [
       {

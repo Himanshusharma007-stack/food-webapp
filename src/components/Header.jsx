@@ -1,17 +1,19 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import CartIcon from '../assets/header/cart.png'
-import foodIcon from '../assets/header/bw-food-icon.png'
+import CartIcon from "../assets/header/cart.png";
+import foodIcon from "../assets/header/bw-food-icon.png";
 
 export default function Header() {
   const cartArr = useSelector((state) => state.cart.items);
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   return (
     <>
       <div className="sticky top-0 z-50 mb-3 bg-white grid grid-cols-3 md:flex md:justify-between md:items-center h-16 font-medium px-4">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/food-webapp">
+          <Link to="/food-webapp/">
             <button className="flex items-center hover:scale-110 duration-300">
               <img
                 src={foodIcon}
@@ -27,9 +29,9 @@ export default function Header() {
         <ul className="hidden md:flex md:flex-grow md:gap-8 md:justify-center">
           <li className="hover:scale-110 duration-300">
             <NavLink
-              to="/food-webapp"
+              to="/food-webapp/"
               className={({ isActive, isPending }) =>
-                isActive ? "text-red-500" : ""
+                currentPath === "/food-webapp/" ? "text-red-500" : ""
               }
             >
               <button>Home</button>
@@ -61,11 +63,7 @@ export default function Header() {
         <div className="flex justify-end md:ml-auto hover:scale-110 duration-300">
           <Link to={cartArr?.length ? "/food-webapp/checkout" : ""}>
             <button className="relative">
-              <img
-                src={CartIcon}
-                className="h-10 w-10"
-                alt="Shopping Cart"
-              />
+              <img src={CartIcon} className="h-10 w-10" alt="Shopping Cart" />
               {cartArr?.length > 0 && (
                 <>
                   <span className="animate-ping absolute top-0 right-0 -mt-2 -mr-2 inline-flex items-center justify-center h-5 w-5 rounded-full bg-red-500 text-white text-xs font-medium"></span>

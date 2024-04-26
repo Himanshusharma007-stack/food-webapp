@@ -28,7 +28,7 @@ export default function ContactUs() {
                     <div className="grid w-full  items-center gap-1.5">
                       <label
                         className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        for="first_name"
+                        htmlFor="first_name"
                       >
                         First Name
                       </label>
@@ -42,7 +42,7 @@ export default function ContactUs() {
                     <div className="grid w-full  items-center gap-1.5">
                       <label
                         className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        for="last_name"
+                        htmlFor="last_name"
                       >
                         Last Name
                       </label>
@@ -57,7 +57,7 @@ export default function ContactUs() {
                   <div className="grid w-full  items-center gap-1.5">
                     <label
                       className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      for="email"
+                      htmlFor="email"
                     >
                       Email
                     </label>
@@ -71,7 +71,7 @@ export default function ContactUs() {
                   <div className="grid w-full  items-center gap-1.5">
                     <label
                       className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      for="phone_number"
+                      htmlFor="phone_number"
                     >
                       Phone number
                     </label>
@@ -85,7 +85,7 @@ export default function ContactUs() {
                   <div className="grid w-full  items-center gap-1.5">
                     <label
                       className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      for="message"
+                      htmlFor="message"
                     >
                       Message
                     </label>
