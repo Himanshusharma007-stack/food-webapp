@@ -14,7 +14,7 @@ export default function Footer() {
               target="_blank"
             >
               <img
-                src="../src/assets/footer/github.png"
+                src="../assets/footer/github.png"
                 className="h-8 w-8"
                 alt="Github"
               />
@@ -24,7 +24,7 @@ export default function Footer() {
               target="_blank"
             >
               <img
-                src="../src/assets/footer/linkedin.png"
+                src="../assets/footer/linkedin.png"
                 className="h-8 w-8"
                 alt="LinkedIn"
               />
@@ -38,7 +38,7 @@ export default function Footer() {
               target="_blank"
             >
               <img
-                src="../src/assets/footer/shopping-bags.png"
+                src="../assets/footer/shopping-bags.png"
                 className="h-10 w-10 ml-5"
                 alt="Shopping Bags"
               />

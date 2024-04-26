@@ -12,7 +12,7 @@ export default function Header() {
           <Link to="/food-webapp">
             <button className="flex items-center hover:scale-110 duration-300">
               <img
-                src="../src/assets/header/bw-food-icon.png"
+                src="../assets/header/bw-food-icon.png"
                 className="h-10 w-10 transition-all"
                 alt="PlatterPulse Logo"
               />
@@ -60,7 +60,7 @@ export default function Header() {
           <Link to={cartArr?.length ? "/food-webapp/checkout" : ""}>
             <button className="relative">
               <img
-                src="../src/assets/header/cart.png"
+                src="../assets/header/cart.png"
                 className="h-10 w-10"
                 alt="Shopping Cart"
               />

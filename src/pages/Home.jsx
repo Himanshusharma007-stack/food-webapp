@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className="relative">
         <img
-          src="../src/assets/home/Carousel.jpeg"
+          src="../assets/home/Carousel.jpeg"
           className="h-96 w-screen object-cover"
           alt="Carousel Image"
         />
