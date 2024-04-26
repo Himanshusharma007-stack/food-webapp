@@ -25,7 +25,7 @@ export default function Home() {
           {categories.map((category) => (
             <Link
               key={category.id}
-              to={`/food-detail/${category.id}`}
+              to={`/food-webapp/food-detail/${category.id}`}
               state={{ category }}
             >
               <div className="h-60 w-64 rounded-lg mt-5 mx-4 hover:scale-105 duration-300">
