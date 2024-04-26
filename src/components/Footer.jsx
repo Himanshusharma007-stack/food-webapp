@@ -51,11 +51,11 @@ export default function Footer() {
           <h1 className="mt-2 mb-4">Company</h1>
 
           <p className="text-slate-400 my-2">
-            <Link to="/about">About</Link>
+            <Link to="/food-webapp/about">About</Link>
           </p>
           {/* <p className="text-slate-400 my-2">Careers</p> */}
           <p className="text-slate-400 my-2">
-            <Link to="/teams">Team</Link>
+            <Link to="/food-webapp/teams">Team</Link>
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export default function Footer() {
           <h1 className="mt-2 mb-4">Contact us</h1>
 
           <p className="text-slate-400 my-2">
-            <Link to="/contactus">Help & Support</Link>
+            <Link to="/food-webapp/contactus">Help & Support</Link>
           </p>
           {/* <p className="text-slate-400 my-2">Partner with us</p>
           <p className="text-slate-400 my-2">Ride with us</p> */}

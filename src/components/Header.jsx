@@ -9,7 +9,7 @@ export default function Header() {
       <div className="sticky top-0 z-50 mb-3 bg-white grid grid-cols-3 md:flex md:justify-between md:items-center h-16 font-medium px-4">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/">
+          <Link to="/food-webapp">
             <button className="flex items-center hover:scale-110 duration-300">
               <img
                 src="../src/assets/header/bw-food-icon.png"
@@ -25,7 +25,7 @@ export default function Header() {
         <ul className="hidden md:flex md:flex-grow md:gap-8 md:justify-center">
           <li className="hover:scale-110 duration-300">
             <NavLink
-              to="/"
+              to="/food-webapp"
               className={({ isActive, isPending }) =>
                 isActive ? "text-red-500" : ""
               }
@@ -35,7 +35,7 @@ export default function Header() {
           </li>
           <li className="hover:scale-110 duration-300">
             <NavLink
-              to="/about"
+              to="/food-webapp/about"
               className={({ isActive, isPending }) =>
                 isActive ? "text-red-500" : ""
               }
@@ -45,7 +45,7 @@ export default function Header() {
           </li>
           <li className="hover:scale-110 duration-300">
             <NavLink
-              to="/contactus"
+              to="/food-webapp/contactus"
               className={({ isActive, isPending }) =>
                 isActive ? "text-red-500" : ""
               }
@@ -57,7 +57,7 @@ export default function Header() {
 
         {/* Cart */}
         <div className="flex justify-end md:ml-auto hover:scale-110 duration-300">
-          <Link to={cartArr?.length ? "/checkout" : ""}>
+          <Link to={cartArr?.length ? "/food-webapp/checkout" : ""}>
             <button className="relative">
               <img
                 src="../src/assets/header/cart.png"
