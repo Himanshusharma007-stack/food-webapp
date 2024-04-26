@@ -35,7 +35,7 @@ export default function Checkout() {
 
   useEffect(() => {
     if (!cartArr.length) {
-      navigate("/");
+      navigate("/food-webapp");
     }
   }, [cartArr]);
 
