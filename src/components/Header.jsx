@@ -2,11 +2,19 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import CartIcon from "../assets/header/cart.png";
 import foodIcon from "../assets/header/bw-food-icon.png";
+import LoginButton from "./LoginBtn";
+import LogoutButton from "./LogoutBtn";
+import { useAuth0 } from "@auth0/auth0-react";
+import AvatarDropdown from "./Avatar";
 
 export default function Header() {
   const cartArr = useSelector((state) => state.cart.items);
   const location = useLocation();
   const currentPath = location.pathname;
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  console.log("user -- ", user);
+  console.log("isAuthenticated -- ", isAuthenticated);
 
   return (
     <>
@@ -60,6 +68,8 @@ export default function Header() {
         </ul>
 
         {/* Cart */}
+        {isAuthenticated ? <AvatarDropdown /> : <LoginButton />}
+
         <div className="flex justify-end md:ml-auto hover:scale-110 duration-300">
           <Link to={cartArr?.length ? "/food-webapp/checkout" : ""}>
             <button className="relative">

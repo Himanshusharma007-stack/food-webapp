@@ -11,6 +11,7 @@ import Checkout from "./pages/Checkout.jsx";
 import Teams from "./pages/Team.jsx";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
+import { Auth0Provider } from "@auth0/auth0-react";
 
 const router = createBrowserRouter([
   {
@@ -46,9 +47,15 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
-  </React.StrictMode>
+    <Auth0Provider
+      domain={import.meta.env.VITE_AUTH_DOMAIN || 'dev-xehmosrod5wqrpnk.us.auth0.com'}
+      clientId={import.meta.env.VITE_AUTH_CLIENTID || 'lPKaDSHQN0JKfeoVT44wckEk8qDnbxjG'}
+      authorizationParams={{
+        redirect_uri: import.meta.env.VITE_AUTH_REDIRECT_URL || 'https://himanshusharma007-stack.github.io/food-webapp/',
+      }}
+    >
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
+    </Auth0Provider>
 );
