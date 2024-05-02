@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import GithubLogo from '../assets/footer/github.png'
-import LinkedinLogo from '../assets/footer/linkedin.png'
-import ShoppingBagLogo from '../assets/footer/shopping-bags.png'
+import GithubLogo from "../assets/footer/github.png";
+import LinkedinLogo from "../assets/footer/linkedin.png";
+import ShoppingBagLogo from "../assets/footer/shopping-bags.png";
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <>
       <div className="bg-black text-white grid gap-6 md:gap-4 grid-cols-1 md:grid-cols-4 py-6 md:h-60">
@@ -16,21 +16,13 @@ export default function Footer() {
               href="https://github.com/Himanshusharma007-stack"
               target="_blank"
             >
-              <img
-                src={GithubLogo}
-                className="h-8 w-8"
-                alt="Github"
-              />
+              <img src={GithubLogo} className="h-8 w-8" alt="Github" />
             </a>
             <a
               href="https://www.linkedin.com/in/himanshusharma007-stack/"
               target="_blank"
             >
-              <img
-                src={LinkedinLogo}
-                className="h-8 w-8"
-                alt="LinkedIn"
-              />
+              <img src={LinkedinLogo} className="h-8 w-8" alt="LinkedIn" />
             </a>
           </div>
 
@@ -49,32 +41,31 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Company */}
-        <div className="text-lg md:text-xl">
-          <h1 className="mt-2 mb-4">Company</h1>
+        {!props.hideLinks && (
+          <>
+            {/* Company */}
+            <div className="text-lg md:text-xl">
+              <h1 className="mt-2 mb-4">Company</h1>
 
-          <p className="text-slate-400 my-2">
-            <Link to="/food-webapp/about">About</Link>
-          </p>
-          {/* <p className="text-slate-400 my-2">Careers</p> */}
-          <p className="text-slate-400 my-2">
-            <Link to="/food-webapp/teams">Team</Link>
-          </p>
-        </div>
+              <p className="text-slate-400 my-2">
+                <Link to="/food-webapp/about">About</Link>
+              </p>
+              {/* <p className="text-slate-400 my-2">Careers</p> */}
+              <p className="text-slate-400 my-2">
+                <Link to="/food-webapp/teams">Team</Link>
+              </p>
+            </div>
 
-        {/* Contact Us */}
-        <div className="text-lg md:text-xl">
-          <h1 className="mt-2 mb-4">Contact us</h1>
+            {/* Contact Us */}
+            <div className="text-lg md:text-xl">
+              <h1 className="mt-2 mb-4">Contact us</h1>
 
-          <p className="text-slate-400 my-2">
-            <Link to="/food-webapp/contactus">Help & Support</Link>
-          </p>
-          {/* <p className="text-slate-400 my-2">Partner with us</p>
-          <p className="text-slate-400 my-2">Ride with us</p> */}
-        </div>
-
-        {/* Spacer */}
-        <div></div>
+              <p className="text-slate-400 my-2">
+                <Link to="/food-webapp/contactus">Help & Support</Link>
+              </p>
+            </div>
+          </>
+        )}
       </div>
     </>
   );

@@ -1,10 +1,10 @@
 import React from "react";
+import Myimg from "../assets/images/my-img.jpeg";
 
 let team = [
   {
     name: "Himanshu Sharma",
-    imageUrl:
-      "https://scontent.fdel10-1.fna.fbcdn.net/v/t39.30808-6/273391329_2149939205160560_36939796878654698_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6CsTXwESzDIQ7kNvgEORKUc&_nc_ht=scontent.fdel10-1.fna&oh=00_AfB8OJKg_vB-529AOUB0sF2x84diK7J1Q-RxYDanz_bKpA&oe=6630495B",
+    imageUrl: Myimg,
     role: "Frontend Developer",
   },
   {
@@ -43,26 +43,10 @@ export default function Teams() {
                 style={{
                   background: `url(${member.imageUrl}) center/cover no-repeat`,
                 }}
-              >
-                {/* <div className="absolute bottom-4 left-4">
-                  <h1 className="text-xl font-semibold text-blue">
-                    {member.name}
-                  </h1>
-                  <h6 className="text-base text-blue">{member.role}</h6>
-                </div> */}
-              </div>
+              ></div>
             </div>
           ))}
         </div>
-
-        {/* <div className="mt-8 text-center md:mt-16">
-          <button
-            type="button"
-            className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-          >
-            Join Our Team
-          </button>
-        </div> */}
       </div>
     </section>
   );

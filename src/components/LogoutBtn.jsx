@@ -5,7 +5,18 @@ const LogoutButton = () => {
   const { logout } = useAuth0();
 
   return (
-    <button className="block w-full px-4 py-2 text-sm text-red-600 hover:bg-gray-100" onClick={() => logout({ logoutParams: { returnTo: import.meta.env.VITE_AUTH_REDIRECT_URL || 'https://himanshusharma007-stack.github.io/food-webapp/' } })}>
+    <button
+      className="block w-full px-4 py-2 text-sm text-red-600 hover:bg-gray-100"
+      onClick={() =>
+        logout({
+          logoutParams: {
+            returnTo:
+              import.meta.env.VITE_AUTH_LOGOUT_URL ||
+              "https://himanshusharma007-stack.github.io/food-webapp/homepage",
+          },
+        })
+      }
+    >
       Log Out
     </button>
   );
