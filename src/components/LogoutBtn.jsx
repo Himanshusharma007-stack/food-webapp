@@ -12,7 +12,7 @@ const LogoutButton = () => {
           logoutParams: {
             returnTo:
               import.meta.env.VITE_AUTH_LOGOUT_URL ||
-              "https://himanshusharma007-stack.github.io/food-webapp/homepage",
+              "https://himanshusharma007-stack.github.io/food-webapp/",
           },
         })
       }
