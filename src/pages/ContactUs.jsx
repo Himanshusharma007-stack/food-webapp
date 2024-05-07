@@ -71,7 +71,11 @@ export default function ContactUs() {
                     close={() => setNotification(false)}
                   />
                 )}
-                <form action="" className="mt-8 space-y-4" onSubmit={(e) => contactusBtnClicked(e)}>
+                <form
+                  action=""
+                  className="mt-8 space-y-4"
+                  onSubmit={(e) => contactusBtnClicked(e)}
+                >
                   <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
                     <div className="grid w-full  items-center gap-1.5">
                       <label
@@ -164,23 +168,15 @@ export default function ContactUs() {
                     type="submit"
                   >
                     {isLoading ? (
-                      // Show loader when isLoading is true
-                      <div className="flex items-center">
+                      <div className="flex justify-center">
                         <div className="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-white"></div>
                         <span className="ml-2">Sending...</span>
                       </div>
                     ) : (
-                      // Show "Send Message" text when isLoading is false
                       "Send Message"
                     )}
                   </button>
                 </form>
-                {/* {contactUs && (
-                  <Notification
-                    msg="This feature will available soon."
-                    close={() => setContactUs(false)}
-                  />
-                )} */}
               </div>
             </div>
             <img
